@@ -4,13 +4,13 @@ var _ = require('lodash');
 
 function Rater(options){
 	_.defaults(this, {
-		factors: []
+		factors: [],
 	});
 	_.extend(this, options);
 
 	this.factors.push({
 		weight: 1,
-		score: wordScore
+		score: wordScore,
 	});
 }
 
