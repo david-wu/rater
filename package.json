@@ -1,0 +1,12 @@
+{
+	"name": "rater",
+	"description": "Rate objects based on custom factors",
+	"version": "0.0.1",
+	"author": "David Wu <david.wuu@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"lodash": "^4.13.1",
+		"path": "^0.12.7",
+		"through2": "^2.0.1"
+	}
+}
