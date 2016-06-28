@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.10.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.0
+3 info using node@v5.10.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/dwu/david/rater',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/dwu/.npm/rate/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/dwu/.npm correctMkdir not in flight; initializing
+10 info lifecycle rate@0.0.1~prepublish: rate@0.0.1
+11 silly lifecycle rate@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/dwu/.npm/rate/0.0.1/package.tgz',
+12 verbose tar pack   '/Users/dwu/david/rater' ]
+13 verbose tarball /Users/dwu/.npm/rate/0.0.1/package.tgz
+14 verbose folder /Users/dwu/david/rater
+15 verbose addLocalTarball adding from inside cache /Users/dwu/.npm/rate/0.0.1/package.tgz
+16 verbose correctMkdir /Users/dwu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd rate@0.0.1
+18 verbose afterAdd /Users/dwu/.npm/rate/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/dwu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/dwu/.npm/rate/0.0.1/package/package.json written
+21 silly publish { name: 'rate',
+21 silly publish   description: 'Rate objects based on factors',
+21 silly publish   version: '0.0.1',
+21 silly publish   author: { name: 'David Wu', email: 'david.wuu@gmail.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   dependencies: { lodash: '^4.13.1', path: '^0.12.7', through2: '^2.0.1' },
+21 silly publish   gitHead: 'b3b60a16823fde189db91820806986e0e7e81aea',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'rate@0.0.1',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '9cd5d3f7a0dacd2354f350e7ab8e0ba897b7f605',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name rate
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'rate',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'rate',
+26 silly mapToRegistry   name: 'rate',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/rate
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/dwu/.npm/rate/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/rate
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 2:05:31 PM
+33 verbose request using bearer token for auth
+34 verbose request id b75c6f26246f2ce5
+35 http request PUT https://registry.npmjs.org/rate
+36 http 403 https://registry.npmjs.org/rate
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '98',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Tue, 28 Jun 2016 21:05:31 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sjc3129-SJC',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1467147931.049412,VS0,VE111',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/dwu/.npm/registry.npmjs.org/rate on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "rate". Are you logged in as the correct user? : rate
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:100:13)
+40 verbose stack     at Request.emit (events.js:185:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:95:20)
+40 verbose stack     at Request.emit (events.js:182:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid rate
+43 verbose cwd /Users/dwu/david/rater
+44 error Darwin 15.5.0
+45 error argv "/usr/local/Cellar/node/5.10.1/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v5.10.1
+47 error npm  v3.10.0
+48 error code E403
+49 error you do not have permission to publish "rate". Are you logged in as the correct user? : rate
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
