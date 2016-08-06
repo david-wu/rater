@@ -1,7 +1,7 @@
 {
 	"name": "rater",
 	"description": "Rate objects based on custom factors",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "David Wu <david.wuu@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
